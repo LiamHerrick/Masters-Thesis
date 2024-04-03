@@ -21,11 +21,7 @@ A_py2 = np.array([[0, 0, 0, 0], [1/2, 0, 0, 0], [0, 1/2, 0, 0], [0, 0, 1/2, 0]])
 # print(type(A_py2))
 
 eng = matlab.engine.start_matlab()
-eng.addpath(r'C:\Users\herri\OneDrive\Documents\Groningen\Thesis\Scripts\Matlab')
-eng.addpath(r'C:\Users\herri\OneDrive\Documents\Groningen\Thesis\Scripts\Matlab\RK-coeff-opt')
-eng.addpath(r'C:\Users\herri\OneDrive\Documents\Groningen\Thesis\Scripts\Matlab\RKtools')
-eng.addpath(r'C:\Users\herri\OneDrive\Documents\Groningen\Thesis\Scripts\Matlab\polyopt')
-eng.addpath(r'C:\Users\herri\OneDrive\Documents\Groningen\Thesis\Scripts\Matlab\am_radius-opt')
+eng.addpath(r'PATH')
 
 
 A_list = A_py.tolist()

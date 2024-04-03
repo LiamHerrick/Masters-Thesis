@@ -22,12 +22,7 @@ import matlab.engine
 # eng = matlab.engine.connect_matlab(name=None)
 eng = matlab.engine.start_matlab()
 
-eng.addpath(r'C:\Users\herri\OneDrive\Documents\Groningen\Thesis\Scripts\Matlab')
-eng.addpath(r'C:\Users\herri\OneDrive\Documents\Groningen\Thesis\Scripts\Matlab\RK-coeff-opt')
-eng.addpath(r'C:\Users\herri\OneDrive\Documents\Groningen\Thesis\Scripts\Matlab\RKtools')
-eng.addpath(r'C:\Users\herri\OneDrive\Documents\Groningen\Thesis\Scripts\Matlab\polyopt')
-eng.addpath(r'C:\Users\herri\OneDrive\Documents\Groningen\Thesis\Scripts\Matlab\am_radius-opt')
-
+eng.addpath(r'PATH')
 test = eng.sqrt(4.0)
 print(test)
 

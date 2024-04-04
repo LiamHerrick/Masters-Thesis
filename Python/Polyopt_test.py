@@ -10,11 +10,6 @@ import matlab.engine
 
 
 eng = matlab.engine.start_matlab()
-# eng.addpath(r'PATH')
-# eng.addpath(r'PATH')
-# eng.addpath(r'PATH')
-# eng.addpath(r'PATH')
-# eng.addpath(r'PATH')
 test = eng.sqrt(4.0)
 print(test)
 
@@ -32,7 +27,7 @@ poly_coeff = np.asarray(poly_coeff)
 print('h is', h)
 # print(type(poly_coeff))
 print('poly_coeff has size', poly_coeff.shape, 'and is \n', poly_coeff)
-print('Previous h was 0.13259862899780273')
+# print('Previous h was 0.13259862899780273')
     
 # try:
 #     s = 4

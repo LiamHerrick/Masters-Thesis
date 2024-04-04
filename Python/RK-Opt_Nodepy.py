@@ -21,7 +21,7 @@ A_py2 = np.array([[0, 0, 0, 0], [1/2, 0, 0, 0], [0, 1/2, 0, 0], [0, 0, 1/2, 0]])
 # print(type(A_py2))
 
 eng = matlab.engine.start_matlab()
-eng.addpath(r'PATH')
+# eng.addpath(r'PATH')
 
 
 A_list = A_py.tolist()

@@ -10,11 +10,11 @@ import matlab.engine
 
 
 eng = matlab.engine.start_matlab()
-eng.addpath(r'PATH')
-eng.addpath(r'PATH')
-eng.addpath(r'PATH')
-eng.addpath(r'PATH')
-eng.addpath(r'PATH')
+# eng.addpath(r'PATH')
+# eng.addpath(r'PATH')
+# eng.addpath(r'PATH')
+# eng.addpath(r'PATH')
+# eng.addpath(r'PATH')
 test = eng.sqrt(4.0)
 print(test)
 

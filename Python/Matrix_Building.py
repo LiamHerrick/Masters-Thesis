@@ -7,16 +7,6 @@ from nodepy import ivp
 from nodepy import *
 
 
-A = np.array([[0,0,0,0],[1/2,0,0,0],[0,1/2,0,0],[0,0,1,0]])
-b = np.array([1/6, 1/3, 1/3, 1/6])
-
-# A = np.array([[0, 0], [1, 0]])
-# b = np.array([1/2, 1/2])
-
-lam = 0.0001
-K = 2
-S = 4
-
 def PFEasRK(lam, K):
     # A
     A = np.zeros([K+1,K+1])
@@ -40,7 +30,6 @@ def get_c_values(A, b):
     
     return method.c
 
-# Function that generates the "zero" matrices
 def allmost_zero_mat(S, lam, K, A, b, L):
     c = get_c_values(A, b)
     Z = np.zeros([K+1,K+1])
@@ -149,17 +138,6 @@ def gen_block_matrix(S, lam, K, A, b):
 
     return block_structure
 
-
-A_block = gen_block_matrix(S, lam, K, A, b)
-b_block = gen_b_matrix(S, b, lam, K)
-result = rk.ExplicitRungeKuttaMethod(A_block, b_block)
-print(result)
-bounds = [-1/lam-50, 50, -300, 300] # x_left, x_right, y_bottom, y_top
-# bounds = [-10, 10, -10, 10]
-result.plot_stability_region(bounds = bounds)
-# result.plot_stability_region()
-# result.plot_stability_function()
-plt.show()
 
 
 

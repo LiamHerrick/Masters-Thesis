@@ -12,7 +12,7 @@ print(test)
 
 
 try:
-    N = 6400
+    N = 500
     s = 4
     p = 4
     matlab_code = f"opt_poly_bisect(spectrum2('gap',{N}),{s},{p},'chebyshev');"

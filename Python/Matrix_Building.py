@@ -1,9 +1,6 @@
-from nodepy import rk, semidisc
+from nodepy import rk
 import numpy as np
 import matplotlib.pyplot as plt
-import nodepy.rooted_trees as rt 
-import nodepy.convergence as cv 
-from nodepy import ivp
 from nodepy import *
 
 
@@ -139,7 +136,3 @@ def gen_block_matrix(S, lam, K, A, b):
     return block_structure
 
 
-
-
-
-print("Finished")

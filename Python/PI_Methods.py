@@ -1,18 +1,17 @@
-from nodepy import rk, semidisc
+from nodepy import rk
 import numpy as np
 import matplotlib.pyplot as plt
-import nodepy.rooted_trees as rt 
-import nodepy.convergence as cv 
-from nodepy import ivp
 from nodepy import *
+import time
 
 from Matrix_Building import PFEasRK
 from Matrix_Building import gen_block_matrix
 from Matrix_Building import gen_b_matrix
 
+start = time.time()
 
 lam = 0.01
-K = 10
+K = 3
 S = 2
 
 ## PIFE
@@ -52,3 +51,5 @@ plt.show()
 # plt.show()
 
 print("Finished")
+end = time.time()
+print('Total time was', end-start, 'seconds')

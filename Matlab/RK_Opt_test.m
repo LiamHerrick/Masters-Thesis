@@ -1,0 +1,31 @@
+% results_rkopt = runtests('test_rkopt.m');
+% table(results_rkopt)
+
+
+A = [0 0 0 0; 1 0 0 0; 0 1 0 0; 0 0 1 0];
+b = [1/6; 1/3; 1/3; 1/6];
+c = [0; 1; 1; 1];
+p = 4;
+test5 = oc_butcher(A,b,c,p);
+% disp('Test');
+% disp(test5);
+% disp('Size');
+% disp(size(test5));
+% disp('Class');
+% result = class(test5);
+% disp(result);
+
+% s=4;
+% k=3;
+% rk = rk_opt(s,k,'erk','ssp');
+% disp(rk);
+% stab = rk_stabfun(rk);
+% disp('Break');
+% disp(stab);
+% n_test = set_n(s,'erk',k);
+% disp(n_test);
+
+
+% function result = squareValue(x)
+%     result = x^2;
+% end
